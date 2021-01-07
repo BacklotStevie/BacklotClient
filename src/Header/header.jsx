@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import Logo from './backlot-logo.png'
+import Logo from '../Images/backlot-logo.png'
 import { useState, useContext } from "react";
-import { userContext } from "../context/UserCtx";
+import { userContext } from '../context/UserCtx'
 import { useHistory } from 'react-router-dom'
 import '../Header/header.css'
 
@@ -29,7 +29,7 @@ const Header = () => {
                     />
                     Dice Roller */}
                     <Link to="/home">
-                        <img className="logo" src={Logo} alt='logo' />
+                        <img className="logo" src={Logo} alt='logo' width="50" height="50" />
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -46,22 +46,6 @@ const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            {/* <nav className='navbar bg-dark'>
-                <div className=''>
-                    <Link to="/home">
-                        <h3>B</h3>
-                    </Link>
-                </div>
-                <div className=''>
-                    <ul className='d-flex list-unstyled text-white nav-options'>
-                        <li className='nav-options'>Film Reviews</li>
-                        <li className='nav-options'>Podcast</li>
-                        <li className='nav-options'>Videos</li>
-                        <li className='nav-options'>Team</li>
-                        <li className='nav-options'>About Us</li>
-                    </ul>
-                </div>
-            </nav > */}
         </>
     );
 };

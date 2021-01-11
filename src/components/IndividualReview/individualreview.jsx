@@ -1,9 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect, useContext } from "react";
-import { userContext } from "../context/UserCtx";
+import { userContext } from "../../context/UserCtx";
 import { Link } from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
+import './individualreview.css'
 
 const IndividualReview = (props) => {
     const { user } = useContext(userContext);

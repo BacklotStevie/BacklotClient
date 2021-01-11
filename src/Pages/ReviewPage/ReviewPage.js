@@ -2,7 +2,7 @@ import './ReviewPage.css';
 import React from 'react';
 import ReviewsList from '../../components/ReviewPage/reviews';
 
-const ReviewPage = () => {
+const ReviewPage = (props) => {
     return (
         <div className="container-fluid p-4">
             <div className="row review-container">

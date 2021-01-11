@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div className="footer row text-center bg-dark text-white ml-5 mr-5 mt-5">
             <div className="mission-footer col-12 col-md-4 mt-5 mb-5 border border-white border-top-0 border-bottom-0 border-left-0">
-                <h4 class="services-footer">Our Mission Statement</h4>
+                <h4 className="services-footer">Our Mission Statement</h4>
                 <p className=''>Inside the Backlot is a community. A place for cinephiles and filmmakers to connect and interact with one another. Our goal here at the Backlot is to expose the public to new films and up-and-coming filmmakers looking to leave their mark on the industry. For many, film is a hobby. For some, film is a passion. One thing is certain: film is art, and like any art, it’s a way to get your voice heard. Here are our voices.
                 <br /><br />Welcome to Inside the Backlot.</p>
                 <div>

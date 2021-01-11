@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './reviews.css'
 
-const ReviewsList = () => {
+const ReviewsList = (props) => {
     const [reviews, setReviews] = useState(false)
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const ReviewsList = () => {
     }, [])
 
     const ShowReviews = () => {
-        return reviews && reviews.map((review) => {
+        return reviews && reviews.reverse().map((review, i, arr) => {
             return (
                 <div className="story col-12 col-sm-4 mb-4">
                     <div className="story-info card">

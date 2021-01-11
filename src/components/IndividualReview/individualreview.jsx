@@ -12,14 +12,15 @@ const IndividualReview = (props) => {
     const history = useHistory()
 
     useEffect(() => {
+        console.log(props)
         axios.get(`${process.env.REACT_APP_API_BASE_URL}/reviews/${props.match.params.id}`)
             .then((res) => {
+
 
                 console.log(res.data)
                 setIndividual(res.data)
             })
     }, [])
-
 
     const handleOnClick = () => {
         axios.delete(`${process.env.REACT_APP_API_BASE_URL}/reviews/${props.match.params.id}`)

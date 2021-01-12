@@ -61,7 +61,7 @@ const TeamPage = () => {
 
                     {user.userType === "admin" ? (
                         <div className="text-center">
-                            <Link to={'/reviews/addreview'}><button className="">Add</button></Link>
+                            {/* <Link to={'/reviews/addreview'}><button className="">Add</button></Link> */}
 
                         </div>
                     ) : null}

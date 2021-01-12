@@ -26,6 +26,7 @@ function App(props) {
       <Route exact path="/aboutus" render={(props) => <AboutUsPage {...props} />} />
       <Route exact path="/signup" render={(props) => <Signup {...props} />} />
       <Route exact path="/login" render={(props) => <LoginPage {...props} />} />
+      <Route exact path="/teampage" render={(props) => <TeamPage {...props} />} />
       {/* </Switch> */}
       <Footer />
 

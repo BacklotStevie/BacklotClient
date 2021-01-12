@@ -1,11 +1,13 @@
 import React from 'react';
 import { CardDeck } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
-import AddReview from './Components/addreview'
+import AddReview from '../../components/AddReview/addreview'
 import { useContext } from "react";
-import { userContext } from "./context/UserCtx";
+import { userContext } from '../../context/UserCtx.jsx';
 import { Link } from 'react-router-dom'
 import './teampage.css'
+import John from '../Images/john.jpg';
+import Steven from '../Images/steven.jpg';
 
 const TeamPage = () => {
 
@@ -17,7 +19,7 @@ const TeamPage = () => {
                 <div className="col-12 col-sm-6 mb-5 about-card">
                     <CardDeck className="podcasts">
                         <Card className='podcast-card'>
-                            <Card.Img className='about-pics' width="100%" variant="top" src="https://lh3.googleusercontent.com/proxy/J0jn_5SBXsxMAApGr5tSwTNL1c4owOMqiTIpJQsFULP7OqDgLqjYtooSpiYRcC5kb1KCxeRnIqHcac5n8-AgvNolyGtaQNn-JNxXYJLq4ZxDx6HgeMV_jYCC8X0reXfGtL3oUrSwBw" />
+                            <Card.Img className='about-pics' width="100%" variant="top" src={Steven} />
                             <Card.Body className="">
                                 <Card.Title className="text-center mb-3"><h3>Steven Sarria</h3><br /><h6><i>Co-Host, Editor, Founder</i></h6></Card.Title>
                                 <Card.Text className="podcast-text">
@@ -39,7 +41,7 @@ const TeamPage = () => {
                 <div className="col-12 col-sm-6 mb-5 about-card">
                     <CardDeck className="podcasts">
                         <Card className='podcast-card'>
-                            <Card.Img className='about-pics' width="100%" variant="top" src="http://backlotreview.com/assets/images/photo4967873253083293978-600x747.jpg" />
+                            <Card.Img className='about-pics' width="100%" variant="top" src={John} />
                             <Card.Body className="">
                                 <Card.Title className="text-center mb-3"><h3>John Kegley</h3><br /><h6><i>Co-Host</i></h6></Card.Title>
                                 <Card.Text className="podcast-text">
@@ -59,7 +61,7 @@ const TeamPage = () => {
 
                     {user.userType === "admin" ? (
                         <div className="text-center">
-                            <Link to={'/reviews/addreview'}><button className="m-3">Add</button></Link>
+                            <Link to={'/reviews/addreview'}><button className="">Add</button></Link>
 
                         </div>
                     ) : null}

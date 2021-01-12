@@ -1,0 +1,21 @@
+.about-card {
+    height: 50rem;
+  }
+  
+.about-cards {
+    height: 65rem;
+  }
+  
+.socials-about {
+    text-align: center;
+  }
+  
+.social-icons-team {
+    height: 30px;
+    width: 30px;
+  }
+  
+.social-icons-insta {
+    height: 25px;
+    width: 25px;
+  }

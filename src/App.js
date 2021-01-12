@@ -12,11 +12,14 @@ import LandingPage from './Pages/LandingPage/LandingPage';
 import ReviewPage from './Pages/ReviewPage/ReviewPage.js';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import IndividualReview from './components/IndividualReview/individualreview';
+import BacklotTeam from './Pages/TeamPage/TeamPage'
+import AddReview from './components/AddReview/addreview'
 
 function App(props) {
   return (
     <div className="App">
       <Header />
+      <Route exact path="/addreview" render={(props) => <AddReview  {...props} />} />
       <Route exact path="/home" render={(props) => <LandingPage {...props} />} />
       {/* <Switch> */}
       <Route exact path="/reviews/:id" render={(props) => <IndividualReview {...props} />} />
@@ -26,7 +29,7 @@ function App(props) {
       <Route exact path="/aboutus" render={(props) => <AboutUsPage {...props} />} />
       <Route exact path="/signup" render={(props) => <Signup {...props} />} />
       <Route exact path="/login" render={(props) => <LoginPage {...props} />} />
-      <Route exact path="/teampage" render={(props) => <TeamPage {...props} />} />
+      <Route exact path="/teampage" render={(props) => <BacklotTeam {...props} />} />
       {/* </Switch> */}
       <Footer />
 

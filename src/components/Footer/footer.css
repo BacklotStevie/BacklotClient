@@ -32,3 +32,17 @@
     height: 25px;
     width: 25px;
   }
+
+.contact-form {
+  align-items: center;
+  margin: 10px;
+}
+
+.contact-firstname {
+  padding-bottom: 10px;
+}
+
+.contact-email {
+  padding-bottom: 10px;
+}
+

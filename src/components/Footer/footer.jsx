@@ -42,20 +42,20 @@ const Footer = () => {
             <div className=" mission-footer col-12 col-md-4 mt-5 mb-5">
                 <h1>Contact Us</h1>
                 <div>
-                    <form className="contact-form">
+                    <form className="contact-form" method="post" action="contactform.php">
                         <div className="contact-firstname">
                             <label for="name"></label>
-                            <input type="text" id="name" name="name" placeholder="Your name"></input>
+                            <input type="text" id="name" name="name" placeholder="Your name" required></input>
                         </div>
 
                         <div className="contact-email">
-                            <label for="lname"></label>
-                            <input type="text" id="email" name="email" placeholder="Your email"></input>
+                            <label for="email"></label>
+                            <input type="text" id="email" name="email" placeholder="Your email" required></input>
                         </div>
 
                         <div className="contact-subject">
                             <label for="subject"></label>
-                            <textarea type="text" name="subject" placeholder="Your message"></textarea>
+                            <textarea type="text" name="subject" placeholder="Your message" required></textarea>
                         </div>
 
                         <input className="contact-submit bg-medium" type="submit" value="Submit"></input>
